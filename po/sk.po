@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: warzone2100\n"
 "Report-Msgid-Bugs-To: warzone2100-project@lists.sourceforge.net\n"
 "POT-Creation-Date: 2023-11-18 19:02+0000\n"
-"PO-Revision-Date: 2024-03-14 05:00\n"
+"PO-Revision-Date: 2024-04-29 02:13\n"
 "Last-Translator: \n"
 "Language-Team: Slovak\n"
 "Language: sk_SK\n"
@@ -868,11 +868,11 @@ msgstr ""
 
 #: data/base/messages/strings/cam3strings.txt:79
 msgid "Enemy forces are ....... from these coordinates."
-msgstr ""
+msgstr "Nepriateľské jednotky sú ....... od týchto koordinátov."
 
 #: data/base/messages/strings/cam3strings.txt:80
 msgid "Defend the base and ........ the ......."
-msgstr ""
+msgstr "Obráň základňu a  ........ "
 
 #: data/base/messages/strings/cam3strings.txt:81
 msgid "Search and destroy ...."
@@ -888,7 +888,7 @@ msgstr "Veliteľ, vaše rozhodné akcie zastavili rozšírenie NEXUS."
 
 #: data/base/messages/strings/cam3strings.txt:86
 msgid "Before NEXUS was expelled, we intercepted this message - Decoding completed."
-msgstr ""
+msgstr "Pred vyhnaním NEXUS sme zachytili túto správu – Dekódovanie kompletné."
 
 #: data/base/messages/strings/cam3strings.txt:89
 msgid "A NEXUS task force is heading for these coordinates."
@@ -908,7 +908,7 @@ msgstr "PREPRAVNÁ MISIA: Výsadkový tím"
 
 #: data/base/messages/strings/cam3strings.txt:95
 msgid "Commander, your attack on ...."
-msgstr ""
+msgstr "Veliteľ, tvoj útok na ...."
 
 #: data/base/messages/strings/cam3strings.txt:98
 msgid "NEXUS exiting system."
@@ -932,7 +932,7 @@ msgstr "Prevezmi kontrolu nad našimi jednotkami a veď nás."
 
 #: data/base/messages/strings/cam3strings.txt:109
 msgid "Control transfer successful."
-msgstr ""
+msgstr "Odovzdanie ovládania úspešné."
 
 #: data/base/messages/strings/cam3strings.txt:110
 msgid "Entering new zone."
