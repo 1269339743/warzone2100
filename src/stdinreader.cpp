@@ -26,6 +26,7 @@
 #include "multistat.h"
 #include "multilobbycommands.h"
 #include "clparse.h"
+#include "chat.h"
 
 #include <string>
 #include <atomic>
@@ -927,10 +928,10 @@ int cmdInputThreadFunc(void *)
 			{
 				std::string chatmsgstr(chatmsg);
 				wzAsyncExecOnMainThread([chatmsgstr] {
-					if (!NetPlay.isHostAlive)
+					if (!NetPlay.isHostAlive || (NetPlay.isHost && !ingame.localJoiningInProgress))
 					{
-						// can't send this message when the host isn't alive
-						wz_command_interface_output("WZCMD error: Failed to send bcast message because host isn't yet hosting!\n");
+						auto message = InGameChatMessage(NetPlay.hostPlayer, chatmsgstr.c_str());
+						message.send();
 					}
 					sendRoomSystemMessage(chatmsgstr.c_str());
 				});
