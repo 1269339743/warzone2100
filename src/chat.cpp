@@ -218,12 +218,6 @@ void InGameChatMessage::send()
 	else
 	{
 		sendToHumanPlayers();
-		if (NetPlay.isHost && NetPlay.players[selectedPlayer].isSpectator)
-		{
-			// spectator hosts do get to send messages visible to all players,
-			// but not AI / scripts
-			return;
-		}
 		sendToAiPlayers();
 		triggerEventChat(sender, sender, text);
 	}
